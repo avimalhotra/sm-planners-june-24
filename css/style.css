@@ -20,6 +20,9 @@ html{
     font-size: 15px;
     --ff: "Montserrat", sans-serif;
     --maj: mb, serif;
+    --dg:#213532;
+    --lg:#f0f2f2;
+    --gold:#e0c48f;
 }
 .maj{ font-family: var(--maj); }
 body{
@@ -48,6 +51,29 @@ body{
 
 /* custom css */
 
+header{ background: var(--dg); color: #fff; padding: 13px 0; }
+header nav{ display: flex;  justify-content: end; }
+header li{ margin-left: 22px;}
+header nav a{ display: block; width: 146px; font-size: 14px; line-height: 39px; border: 3px solid; color: inherit; text-align: center;}
+header li:last-child a{ color: var(--gold);}
+header nav a.active{ background: #10baae; border-color: #10baae;}
+
+
+.banner{ background: url(../img/bg1.webp) no-repeat center/cover; color: #fff; text-align: center; aspect-ratio: 750/313;}
+.banner p{ font-size: 100px; line-height: 1.2; text-shadow: 0 5px 5px rgba(77, 77, 77, 0.42); }
+.banner a{ display: inline-block;  width: 185px; line-height: 50px; background: #fff; color: var(--dg); text-align: center; font-weight: bold; font-size: 14px; }
+.grid{ display: grid; place-items: center;}
+.banner :is(.container, .grid){ height: 100%; }
+
+
+.wrap-3{ background: var(--dg); color: var(--gold); font-size: 30px; text-align: center; line-height: 5; text-transform: uppercase; letter-spacing: 3px; }
+
+
+.wrap-4{ background: url(../img/bg2.webp) no-repeat #f0f0f2; padding: 70px 0;}
+h2{ font-size: 40px; line-height: 1.25; color: #436d67; }
+.wrap-4 p{ color: #8f9092; font-size: 13px; line-height: 24px; margin: 50px 0; }
+.wrap-4 a{ display: block; width: 185px; line-height: 44px; border: 3px solid; color: var(--dg); text-align: center; font-weight: bold;}
+
 
 @media screen and ( width<=1220px){
     html{ font-size: 13px;}
@@ -67,13 +93,17 @@ body{
 .col-t-10{ flex-basis: 83.33%; max-width: 83.33%; }
 .col-t-11{ flex-basis: 91.66%; max-width: 91.66%; }
 .col-t-12{ flex-basis: 100%; max-width: 100%; }
-
+    .banner p{ font-size: 60px;}
+    .wrap-4{ background-size: cover; background-position: center;}
+    .wrap-4 p{ color: var(--dg);}
 }
 
 
 @media screen and ( width<=767px){
     html{ font-size: 12px;}
-    
+    .col-m-6{ flex-basis: 50%; max-width: 50%; }
+    header nav{ display: none;}
+    .wrap-3 p{ font-size: 20px; }
 }
 
 @media screen and ( width<=460px){
@@ -89,5 +119,8 @@ body{
 .col-p-10{ flex-basis: 83.33%; max-width: 83.33%; }
 .col-p-11{ flex-basis: 91.66%; max-width: 91.66%; }
 .col-p-12{ flex-basis: 100%; max-width: 100%; }
-
+    header img{ width: 100px; height: auto;}
+    .banner p{ font-size: 40px;}
+    .banner a{ width: 120px; line-height: 36px; font-size: 12px;}
+    .wrap-3{ line-height: 3;}
 }
