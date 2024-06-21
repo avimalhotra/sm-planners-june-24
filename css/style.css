@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *,::before,::after{ margin: 0; box-sizing: border-box;}
 img{ vertical-align: bottom;}
@@ -6,7 +5,7 @@ button{ padding: 0; cursor: pointer;}
 :disabled{ cursor: not-allowed;}
 a{ text-decoration: none;}
 ul{ list-style: none; padding: 0;}
-iframe{ border: none;}
+iframe{ border: none; }
 abbr[title]{ cursor: help;}
 
 @font-face {
@@ -47,6 +46,7 @@ body{
 .img-resp{ max-width: 100%; height: auto; }
 .flex{ display: flex;}
 .justify-space-bet{ justify-content: space-between; }
+.justify-center{ justify-content: center; }
 .align-item-center{ align-items: center;}
 
 /* custom css */
@@ -56,7 +56,7 @@ header nav{ display: flex;  justify-content: end; }
 header li{ margin-left: 22px;}
 header nav a{ display: block; width: 146px; font-size: 14px; line-height: 39px; border: 3px solid; color: inherit; text-align: center;}
 header li:last-child a{ color: var(--gold);}
-header nav a.active{ background: #10baae; border-color: #10baae;}
+header nav a.active{ background: #10baae; border-color: #10baae; color: #fff;}
 
 
 .banner{ background: url(../img/bg1.webp) no-repeat center/cover; color: #fff; text-align: center; aspect-ratio: 750/313;}
@@ -73,6 +73,27 @@ header nav a.active{ background: #10baae; border-color: #10baae;}
 h2{ font-size: 40px; line-height: 1.25; color: #436d67; }
 .wrap-4 p{ color: #8f9092; font-size: 13px; line-height: 24px; margin: 50px 0; }
 .wrap-4 a{ display: block; width: 185px; line-height: 44px; border: 3px solid; color: var(--dg); text-align: center; font-weight: bold;}
+
+.wrap-5{ padding: 95px 0 45px; text-align: center;}
+.wrap-5 h3{ font-size: 30px; color: var(--dg);  }
+.wrap-5 p{ color: #8f9092; font-size: 13px; line-height: 24px; margin: 10px 0 50px; text-align: left; }
+
+
+.wrap-6{ background:#f0f0f2; padding: 70px 0; text-align: center;}
+.wrap-6 p{ color: #8f9092; font-size: 13px; line-height: 24px; margin: 10px 0 50px; }
+.video{ aspect-ratio: 1.777; position: relative; }
+.video iframe{ position: absolute; left: 0; top: 0; width: 100%; height: 100%}
+
+
+.wrap-7{ background: var(--dg); text-align: center; padding: 20px 0; }
+.social li{ margin: 1rem;}
+.social a{ font-size: 28px; color: #c7c0c0;}
+.nav a{ display: inline-block;  font-size: 13px; color: #c7c0c0; padding: 0 17px;}
+.nav a:not(:first-child){ border-left: 1px solid;}
+
+h1{ color: #436d67; font-size: 50px;}
+
+.wrap-8{ background: #162724; color: gray; padding: 25px 0; text-align: center;}
 
 
 @media screen and ( width<=1220px){
